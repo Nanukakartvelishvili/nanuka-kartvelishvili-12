@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&family=Montserrat:wght@300&family=Nerko+One&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script
@@ -21,7 +22,7 @@
       <header>
         <a href="index.html"> <img src="images/logo plant.svg" alt="" /> </a>
 
-        <form>
+        <form class="header_form">
           <input class="input_header" type="search" name="search" />
           <button class="header_button1" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -58,8 +59,109 @@
 
       </nav>
 
+<!-- section -->
+<section>
+
+<div class="section_div">
+
+<h3 class="section_div_title">CONTACT US</h3>
+
+<form class="section_form">
+    <div class="first_form">
+        <input type="text" name="yourname" id="name_input" placeholder="Name">
+        <input type="email" name="youremail" id="" placeholder="Email">
+    </div>
+    
+<div class="second_form">
+    <label class="selector_label" for="selector">Is your question about an existing order?</label>
+    <select class="select_section"  id="selector" name="selector">
+        <option value=""></option>
+        <option value="YES">yes</option>
+        <option value="NO">no</option>
+    </select>
+   
+</div>
+
+<div class="third_form">
+    <h3 class="radio_title">I have a delivery question about my order</h3>
+
+    <div class="radio_input_div">
+        <input type="radio" id="radio_1" value="I did not receive my order"
+        name="order-issues">
+        <label class="text_radio" for="radio_1">I did not receive my order</label>
+    </div>
+    
+   <div class="radio_input_div">
+    <input type="radio" id="radio_2" value="My order is incorrect or arrived damaged"
+    name="order-issues">
+    <label  class="text_radio" for="radio_2">My order is incorrect or arrived damaged</label>
+   </div>
+    
+   <div class="radio_input_div">
+    <input type="radio" id="radio_3" value="Cancel my order"
+    name="order-issues"
+>
+    <label  class="text_radio" for="radio_3">Cancel my order</label>
+   </div>
+
+   <div class="radio_input_div">
+    <input type="radio" id="radio_4" value="Change my shipping address"
+    name="order-issues">
+    <label  class="text_radio" for="radio_4">Change my shipping address</label>
+   </div>
+
+   
+</div>
+
+<div class="fourth_form">
+<h3 class="textarea_title">Please provide more details below</h3>
+<textarea placeholder="message" name="message" id="" cols="30" rows="10"></textarea>
+
+</div>
+
+<div class="fifth_form">
+    <input type="checkbox" id="checkbox" name="news" value="receive">
+    <label class="label_fifth_form" for="checkbox">I want to receive the newsletter </label>
+</div>
+
+<button type="submit" class="form_button">SEND</button>
+
+</form>
+
+
+
+</section>
+
+<!-- footer -->
+<footer>
+
+<div class="footer_div1">
+    <h3 class="footer_h3_1">Follow us</h3>
+    <div class="icon_box_1">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-pinterest"></i>
     </div>
 
+</div>
 
+<div class="footer_div2">
+    <h3 class="footer_h3_2">Contact us</h3>
+    <div class="icon_box">
+        <a href=""><i class="fa-solid fa-location-dot"></i></a>
+    <a href=""><i class="fa-solid fa-phone"></i></a>
+    <a href=""><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+</div>
+
+<div class="footer_div3">
+    <h3 class="footer_h3_3">Copyright © 2023 House Plant Shop.</h3>
+</div>
+
+</footer>
+
+    </div>
   </body>
 </html>
